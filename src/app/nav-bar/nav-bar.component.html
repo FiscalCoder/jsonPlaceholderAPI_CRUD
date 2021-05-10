@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-light bg-light shadow">
+  <div class="container-fluid">
+    <a class="navbar-brand" [routerLink]="['/']">jsonPlaceholder <span class="badge bg-success">api</span></a>
+    <button class="navbar-toggler collapsed" type="button" data-toggle="collapse" data-target="#navbarSupportedContent">
+      <div class="hamburger-toggle">
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto mb-2 mb-lg-0 mr-6 pull-right">
+        <li class="nav-item mr-4" routerLinkActive="active">
+          <a class="nav-link active" aria-current="page" [routerLink]="['/']">Home</a></li>
+        <li class="nav-item mr-4" routerLinkActive="active">
+          <a class="nav-link active" aria-current="page" [routerLink]="['/users']">Users</a></li>
+        <li class="nav-item mr-4" routerLinkActive="active">
+          <a class="nav-link active" aria-current="page" [routerLink]="['/posts']" >Posts</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
